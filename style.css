@@ -1,0 +1,11 @@
+[data-gradient="light"] {
+  background-color: theme("colors.white");
+  background-image: linear-gradient(to right, #1951a2, #70dab4);
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+    vertical-align: middle;
+    touch-action: none;
+    cursor: inherit;
+}
