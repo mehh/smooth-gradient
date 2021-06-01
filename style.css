@@ -1,11 +1,40 @@
-[data-gradient="light"] {
-  background-color: theme("colors.white");
+[data-gradient='light'] {
+  background-color: #fff;
   background-image: linear-gradient(to right, #1951a2, #70dab4);
 }
 
-audio, canvas, embed, iframe, img, object, svg, video {
-    display: block;
-    vertical-align: middle;
-    touch-action: none;
-    cursor: inherit;
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}
+
+canvas {
+  /* aspect-ratio: auto 1920 / 459; */
+  width: 100%;
+
+  --vh: 9.46px;
+  --homepage-anim-theme-color-bg-fill: #000;
+  --homepage-anim-theme-color-bg-stroke: rgba(255, 255, 255, 0.25);
+  --homepage-anim-theme-color-ring-stroke: #fff;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+footer > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

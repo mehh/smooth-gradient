@@ -30,13 +30,11 @@ window.APP = {
 
 // import { PIXI } from 'pixi';
 import * as PIXI from 'pixi.js';
+import Gui from '@malven/gui';
 
-const guiPromise = import(/* webpackChunkName: "gui" */ '@malven/gui').then(
-  ({ default: Gui }) => {
-    APP.gui = new Gui();
-    // Do anything else you want with GUI, as shown in basic example above
-  }
-);
+window.APP = {};
+
+APP.gui = new Gui();
 
 // Javascript
 import Footer from './Footer';
